@@ -20,7 +20,7 @@ export default function Servlet() {
           <List ml={4} my={10} >
             <ListItem>
               <Meta>SOURCE</Meta>
-              <Link href="https://www.google.com">
+              <Link href="https://github.com/MR-AUN/Web-Servlet-Ruay-OTOP.git">
               https://github.com/MR-AUN/Web-Servlet-Ruay-OTOP.git <ExternalLinkIcon mx="2px" />
               </Link>
             </ListItem>

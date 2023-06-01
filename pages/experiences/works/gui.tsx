@@ -20,7 +20,7 @@ export default function GUI() {
           <List ml={4} my={10}>
             <ListItem>
               <Meta>SOURCE</Meta>
-              <Link href="https://www.google.com">
+              <Link href="https://github.com/MR-AUN/kiattisakjanjam-profile.git">
                 https://github.com/MR-AUN/GUI-Ruay-OTOP.git
                 <ExternalLinkIcon mx="2px" />
               </Link>
