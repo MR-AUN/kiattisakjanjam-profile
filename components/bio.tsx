@@ -4,7 +4,6 @@ import styled from '@emotion/styled'
 export const BioSection = styled(Box) `
 padding-left: 1.8em;
 text-indent: -1.8em;
-margin-top: 0.5em
 `
 
 

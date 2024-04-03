@@ -4,18 +4,13 @@ import { Box, Text, Link, LinkBox, LinkOverlay, Image } from "@chakra-ui/react";
 import { StaticImageData } from "next/image";
 import { useContext, useEffect } from "react";
 import { TabContext } from "@/pages/_app"; 
-interface GridItemProps {
-  children: ReactNode;
-  href: string;
-  title: string;
-  thumbnail: StaticImageData;
-}
+
 
 interface WorkGridItemProps {
-  children: ReactNode;
   id: string;
   title: string;
   thumbnail: string;
+  children: ReactNode;
 }
 
 export const WorkGridItem = ({

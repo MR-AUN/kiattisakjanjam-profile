@@ -23,6 +23,7 @@ export default function Skills() {
             </Text>
             <UnorderedList p={4}>
               <ListItem>C</ListItem>
+              <ListItem>C#</ListItem>
               <ListItem>Java</ListItem>
               <ListItem>Python</ListItem>
               <ListItem>HTML</ListItem>
@@ -54,6 +55,7 @@ export default function Skills() {
               <ListItem>Next.js</ListItem>
               <ListItem>React.js</ListItem>
               <ListItem>Express.js</ListItem>
+              <ListItem>ASP.NET</ListItem>
             </UnorderedList>
           </Box>
           <Box mt={3}>

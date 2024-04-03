@@ -11,16 +11,22 @@ import {
   useColorModeValue,
   Icon,
   Text,
+  LinkOverlay,
+  Badge,
+  defineStyle,
+  defineStyleConfig,
 } from "@chakra-ui/react";
 import Section from "@/components/section";
 import Paragraph from "@/components/paragraph";
-import { ChevronRightIcon, PhoneIcon, EmailIcon } from "@chakra-ui/icons";
+import { ChevronRightIcon, PhoneIcon, EmailIcon, ExternalLinkIcon } from "@chakra-ui/icons";
 import { BioSection, BioYear } from "@/components/bio";
 import Layout from "@/components/Layout/article";
 import { IoLogoGithub, IoLogoInstagram, IoLogoFacebook } from "react-icons/io5";
+import { Line } from "three";
 
 export default function Home() {
-  const color = useColorModeValue("teal","twitter")
+  const color = useColorModeValue("teal", "twitter")
+
   return (
     <Layout title="Homepage">
       <Container>
@@ -42,7 +48,7 @@ export default function Home() {
           as="p"
           textAlign="right"
         >
-          Last Updated: May 19, 2023
+          Last Updated: Apr. 3, 2024
         </Text>
 
         <Box display={{ md: "flex" }}>
@@ -118,23 +124,47 @@ export default function Home() {
           <Heading as="h3" variant="section-title">
             Works
           </Heading>
+          <Heading size='sm' mt={4}>
+            ZYNTELLIGENT COMPANY LIMITED. (Not an internship)
+          </Heading>
           <BioSection>
-            <BioYear>MAR 2021 - NOV 2021</BioYear>I developed web applications
-            using JSP, JavaScript, HTML, and CSS as assigned at ZYNTELLIGENT
-            Co., Ltd.
+            <BioYear>MAR. 2021 - NOV. 2021</BioYear>I developed web applications
+            using JSP, JavaScript, HTML, and CSS as assigned at <Link href="https://www.zyntelligent.com/" isExternal>ZYNTELLIGENT Co., Ltd.</Link>
           </BioSection>
+
+          <Heading size='sm' mt={4}>
+            Project Web Servlet & GUI
+          </Heading>
           <BioSection>
             <BioYear>2021 - 2022</BioYear>I have been continuously developing
             the RuayRuayRuay website, which is a web application comprising both
             front-end and back-end components. The front-end is implemented
-            using Web Servlet technology, while the Java GUI is created using
+            using<Link href="https://github.com/MR-AUN/Web-Servlet-Ruay-OTOP.git" isExternal> Web Servlet <ExternalLinkIcon mx='2px' /></Link>technology, while the <Link href="https://github.com/MR-AUN/GUI-Ruay-OTOP.git" isExternal> Java GUI <ExternalLinkIcon mx='2px' /></Link>is created using
             Swing. constantly evolving.
           </BioSection>
+          <Heading size='sm' mt={4}>
+            Senior Project Crypto Fashion Market
+          </Heading>
           <BioSection>
-            <BioYear>2022 - Persent</BioYear>
-            Senior Project Crypto Fashion Market. We will work together as a
+            <BioYear>2022 - SEP. 2023</BioYear>
+            <Link href="https://github.com/swisspong/ms-crypto-fashion.git" isExternal>Senior Project Crypto Fashion Market. <ExternalLinkIcon mx='2px' /></Link> We will work together as a
             team to develop a website which involves building using microservice
             techniques.
+          </BioSection>
+          <Heading size='sm' mt={4}>
+            Biofuel Management Data System (Internship)
+          </Heading>
+          <BioSection>
+            <BioYear>DEC. 2023 - JAN. 2024</BioYear>
+            Assigned task: Develop a biofuel status tracking system for the Department of Energy, encompassing form submission, dashboard, and PDF report generation, utilizing <Link style={{ textDecoration: "none", fontWeight: 600 }}>ASP.NET Framework.</Link>
+          </BioSection>
+          <Heading size='sm' mt={4}>
+            Operational Plan and Performance Evaluation Tracking System (Internship)
+          </Heading>
+
+          <BioSection>
+            <BioYear>FEB. 2024 - MAR. 2024</BioYear>
+            Develop an Operational Plan and Performance Evaluation Tracking System for the Tourism Authority of Thailand. I am a Full Stack Developer position' using Next.js (Front-End) and Nest.js (Back-End).
           </BioSection>
         </Section>
         {/* Education */}
@@ -147,7 +177,7 @@ export default function Home() {
             Sikhoraphum Phisai high School Surin, Si Koraphum
           </BioSection>
           <BioSection>
-            <BioYear>2020 - Present</BioYear>
+            <BioYear>2020 - 2024</BioYear>
             Information Sciences in Information Technology Mahasarakham
             University, Kantharawichai
           </BioSection>
@@ -155,7 +185,7 @@ export default function Home() {
 
         <Section delay={0.3}>
           <Heading as="h3" variant="section-title" id="contact">
-            On the Web
+            On the Contact
           </Heading>
           <List>
             <ListItem>

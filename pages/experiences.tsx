@@ -15,6 +15,7 @@ import Section from "@/components/section";
 import { WorkGridItem } from "@/components/grid-item";
 import thumbnailServlet from "@/public/images/works/WebServletRuay/servlet3.jpeg";
 import thumbnailGUI from "@/public/images/works/GUIRuay/manage2.png";
+import thumbnailSenior from "@/public/images/works/senior_project/project_01.png"
 import thumbnailStartup from "@/public/images/activities/startup/startup1.jpg"
 import thumbnailEntrepreneurial from "@/public/images/activities/entrepreneurial/E1.jpg"
 import Layout from "@/components/Layout/article";
@@ -64,6 +65,15 @@ export default function Experiences() {
                     The Graphical User Interface handles supplier and stock management for OTOP products.
                   </WorkGridItem>
                 </Section>
+                <Section delay={0.4}>
+                  <WorkGridItem
+                    id="senior_project"
+                    title="Senior Project Crypto Fashion Market"
+                    thumbnail={thumbnailSenior.src}
+                  >
+                    Implemented the microservice architecture concept and incorporated digital tokens as a core component.
+                  </WorkGridItem>
+                </Section>
               </SimpleGrid>
             </TabPanel>
             {/* Tab Activities */}
@@ -75,6 +85,7 @@ export default function Experiences() {
                     title="Eeveloping Entrepreneurship Skills STARTUP"
                     thumbnail={thumbnailStartup.src}
                   >
+                    A training program aimed at stimulating and transforming the mindset of participants to help them develop into startups.
                   </WorkGridItem>
                 </Section>
                 <Section delay={0.4}>
@@ -83,6 +94,7 @@ export default function Experiences() {
                     title="Entrepreneurial Ecosystem Development"
                     thumbnail={thumbnailEntrepreneurial.src}
                   >
+                    A competition and contest to generate and present ideas and works related to startups.
                   </WorkGridItem>
                 </Section>
               </SimpleGrid>
